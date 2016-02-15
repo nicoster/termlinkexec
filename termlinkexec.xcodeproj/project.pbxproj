@@ -6,9 +6,32 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		709DFA7D1C71CF5000B68673 /* LinkExec.m in Sources */ = {isa = PBXBuildFile; fileRef = 709DFA7C1C71CF5000B68673 /* LinkExec.m */; };
+		709DFA811C71D18F00B68673 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 709DFA801C71D18F00B68673 /* JRSwizzle.m */; };
+		709DFA831C71D51300B68673 /* termlinkexec.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 709DFA721C71CE3B00B68673 /* termlinkexec.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		709DFA821C71D3B100B68673 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Application Support/SIMBL/Plugins";
+			dstSubfolderSpec = 0;
+			files = (
+				709DFA831C71D51300B68673 /* termlinkexec.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		709DFA721C71CE3B00B68673 /* termlinkexec.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = termlinkexec.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		709DFA751C71CE3B00B68673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709DFA7B1C71CF5000B68673 /* LinkExec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkExec.h; sourceTree = "<group>"; };
+		709DFA7C1C71CF5000B68673 /* LinkExec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkExec.m; sourceTree = "<group>"; };
+		709DFA7F1C71D18F00B68673 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		709DFA801C71D18F00B68673 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				709DFA751C71CE3B00B68673 /* Info.plist */,
+				709DFA7F1C71D18F00B68673 /* JRSwizzle.h */,
+				709DFA801C71D18F00B68673 /* JRSwizzle.m */,
+				709DFA7B1C71CF5000B68673 /* LinkExec.h */,
+				709DFA7C1C71CF5000B68673 /* LinkExec.m */,
 			);
 			path = termlinkexec;
 			sourceTree = "<group>";
@@ -56,6 +83,7 @@
 				709DFA6E1C71CE3B00B68673 /* Sources */,
 				709DFA6F1C71CE3B00B68673 /* Frameworks */,
 				709DFA701C71CE3B00B68673 /* Resources */,
+				709DFA821C71D3B100B68673 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -112,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				709DFA811C71D18F00B68673 /* JRSwizzle.m in Sources */,
+				709DFA7D1C71CF5000B68673 /* LinkExec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +155,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -168,7 +197,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
